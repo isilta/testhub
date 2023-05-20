@@ -1,0 +1,5 @@
+hub hub
+shortLabel CANIS-LUPUS Track Hub
+longLabel CANIS-LUPUS: description will be here!
+genomesFile CANIS-LUPUS.genomes.txt
+email isiltakan@gmail.com
