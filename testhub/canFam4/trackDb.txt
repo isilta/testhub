@@ -352,6 +352,11 @@ compositeTrack on
             subGroups view=term
             parent termviewtrack on
 
+track super
+shortLabel Super track
+longLabel Super track
+superTrack on
+
 track CompositeAggregate
 shortLabel CompositeAggregate
 longLabel CompositeAggregate
@@ -359,6 +364,7 @@ type bigWig
 visibility full
 maxHeightPixels 128:32:8
 aggregate transparentOverlay
+parent super on
 container multiWig
 
     track CAGE_L_00141_BC04_minus
