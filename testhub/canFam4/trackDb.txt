@@ -4,6 +4,8 @@ longLabel CAGE-seq tracks
 type bigWig
 dimensions dimX=term dimA=strand
 subGroup1 view Views term=term
+subGroup2 terms Terms skeletal muscle=skeletal muscle midbrain, brainstem, pons=midbrain, brainstem, pons nan=nan spinal cord=spinal cord heart endocardium, heart valve=heart endocardium, heart valve stomach=stomach corpus callosum=corpus callosum caudate nucleus, amygdala=caudate nucleus, amygdala pancreas=pancreas uterus=uterus skin=skin parathyroid gland=parathyroid gland cardiac muscle tissue=cardiac muscle tissue spinal ganglion=spinal ganglion liver=liver urinary bladder=urinary bladder gall bladder=gall bladder adrenal gland=adrenal gland hippocampal formation=hippocampal formation amygdala, caudate nucleus=amygdala, caudate nucleus olfactory bulb=olfactory bulb testis=testis cerebellum hemisphere, cerebellum vermis=cerebellum hemisphere, cerebellum vermis spleen=spleen frontal cortex, parietal cortex, temporal cortex, occipital cortex=frontal cortex, parietal cortex, temporal cortex, occipital cortex thalamus=thalamus retina, optic II nerve=retina, optic II nerve trachea, bronchus=trachea, bronchus midbrain, pons, brainstem=midbrain, pons, brainstem prostate gland=prostate gland neurohypophysis=neurohypophysis ovary=ovary olfactory bulb, vomeronasal organ, nasal cavity olfactory mucosa=olfactory bulb, vomeronasal organ, nasal cavity olfactory mucosa lung=lung artery, vena cava=artery, vena cava kidney=kidney bone marrow=bone marrow piriform lobe=piriform lobe thyroid gland=thyroid gland brain=brain colon=colon adenohypophysis=adenohypophysis
+subGroup3 strand Strand plus=+ minus=-
 compositeTrack on
 
     track termviewtrack
@@ -13,6 +15,20 @@ compositeTrack on
     visibility full
     parent CAGE-seqComposite on
     view term
+    
+            track CAGE_L_00141_BC04_minus
+            bigDataUrl CAGE_L_00141_BC04_minus.bigWig
+            shortLabel Border Collie
+            longLabel amygdala, caudate nucleus, Border Collie
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=amygdala, caudate nucleus strand=minus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
     
             track CAGE_L_00141_BC04_plus
             bigDataUrl CAGE_L_00141_BC04_plus.bigWig
@@ -24,7 +40,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=amygdala, caudate nucleus strand=plus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC02_minus
+            bigDataUrl CAGE_L_00117_BC02_minus.bigWig
+            shortLabel Collie
+            longLabel parathyroid gland, Collie
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=parathyroid gland strand=minus sample=CAGE_L_00117 view=term
             parent termviewtrack on
     
             track CAGE_L_00117_BC02_plus
@@ -37,7 +67,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=parathyroid gland strand=plus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC01_minus
+            bigDataUrl CAGE_L_00118_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cardiac muscle tissue, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cardiac muscle tissue strand=minus sample=CAGE_L_00118 view=term
             parent termviewtrack on
     
             track CAGE_L_00118_BC01_plus
@@ -50,7 +94,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=cardiac muscle tissue strand=plus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00141_BC01_minus
+            bigDataUrl CAGE_L_00141_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel piriform lobe, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00141 view=term
             parent termviewtrack on
     
             track CAGE_L_00141_BC01_plus
@@ -63,7 +121,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC01_minus
+            bigDataUrl CAGE_L_00142_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cerebellum hemisphere, cerebellum vermis, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00142 view=term
             parent termviewtrack on
     
             track CAGE_L_00142_BC01_plus
@@ -76,7 +148,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC02_minus
+            bigDataUrl CAGE_L_00118_BC02_minus.bigWig
+            shortLabel German Pinscher
+            longLabel uterus, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=uterus strand=minus sample=CAGE_L_00118 view=term
             parent termviewtrack on
     
             track CAGE_L_00118_BC02_plus
@@ -89,7 +175,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=uterus strand=plus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00119_BC04_minus
+            bigDataUrl CAGE_L_00119_BC04_minus.bigWig
+            shortLabel German Pinscher
+            longLabel cardiac muscle tissue, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cardiac muscle tissue strand=minus sample=CAGE_L_00119 view=term
             parent termviewtrack on
     
             track CAGE_L_00119_BC04_plus
@@ -102,7 +202,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=cardiac muscle tissue strand=plus sample=CAGE_L_00119 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC04_minus
+            bigDataUrl CAGE_L_00120_BC04_minus.bigWig
+            shortLabel German Pinscher
+            longLabel parathyroid gland, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=parathyroid gland strand=minus sample=CAGE_L_00120 view=term
             parent termviewtrack on
     
             track CAGE_L_00120_BC04_plus
@@ -115,7 +229,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=parathyroid gland strand=plus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC01_minus
+            bigDataUrl CAGE_L_00117_BC01_minus.bigWig
+            shortLabel Rottweiler
+            longLabel skin, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=skin strand=minus sample=CAGE_L_00117 view=term
             parent termviewtrack on
     
             track CAGE_L_00117_BC01_plus
@@ -128,7 +256,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=skin strand=plus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC02_minus
+            bigDataUrl CAGE_L_00120_BC02_minus.bigWig
+            shortLabel Rottweiler
+            longLabel corpus callosum, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00120 view=term
             parent termviewtrack on
     
             track CAGE_L_00120_BC02_plus
@@ -141,7 +283,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00143_BC01_minus
+            bigDataUrl CAGE_L_00143_BC01_minus.bigWig
+            shortLabel Rottweiler
+            longLabel piriform lobe, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00143 view=term
             parent termviewtrack on
     
             track CAGE_L_00143_BC01_plus
@@ -154,7 +310,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00143 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00146_BC04_minus
+            bigDataUrl CAGE_L_00146_BC04_minus.bigWig
+            shortLabel Rottweiler
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00146 view=term
             parent termviewtrack on
     
             track CAGE_L_00146_BC04_plus
@@ -167,7 +337,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00146 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC04_minus
+            bigDataUrl CAGE_L_00142_BC04_minus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel caudate nucleus, amygdala, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00142 view=term
             parent termviewtrack on
     
             track CAGE_L_00142_BC04_plus
@@ -180,7 +364,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00144_BC04_minus
+            bigDataUrl CAGE_L_00144_BC04_minus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00144 view=term
             parent termviewtrack on
     
             track CAGE_L_00144_BC04_plus
@@ -193,7 +391,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00144 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC04_minus
+            bigDataUrl CAGE_L_00133_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00133 view=term
             parent termviewtrack on
     
             track CAGE_L_00133_BC04_plus
@@ -206,7 +418,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC01_minus
+            bigDataUrl CAGE_L_00135_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00135 view=term
             parent termviewtrack on
     
             track CAGE_L_00135_BC01_plus
@@ -219,7 +445,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC01_minus
+            bigDataUrl CAGE_L_00136_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00136 view=term
             parent termviewtrack on
     
             track CAGE_L_00136_BC01_plus
@@ -232,7 +472,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00136 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC01_minus
+            bigDataUrl CAGE_L_00139_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel skin, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=skin strand=minus sample=CAGE_L_00139 view=term
             parent termviewtrack on
     
             track CAGE_L_00139_BC01_plus
@@ -245,7 +499,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=skin strand=plus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC01_minus
+            bigDataUrl CAGE_L_00133_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00133 view=term
             parent termviewtrack on
     
             track CAGE_L_00133_BC01_plus
@@ -258,7 +526,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC04_minus
+            bigDataUrl CAGE_L_00134_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00134 view=term
             parent termviewtrack on
     
             track CAGE_L_00134_BC04_plus
@@ -271,7 +553,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00138_BC01_minus
+            bigDataUrl CAGE_L_00138_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00138 view=term
             parent termviewtrack on
     
             track CAGE_L_00138_BC01_plus
@@ -284,7 +580,7 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00138 view=term
             parent termviewtrack on
     
             track CAGE_L_00139_BC03_plus
@@ -297,7 +593,35 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC03_minus
+            bigDataUrl CAGE_L_00139_BC03_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00140_BC04_minus
+            bigDataUrl CAGE_L_00140_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00140 view=term
             parent termviewtrack on
     
             track CAGE_L_00140_BC04_plus
@@ -310,7 +634,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00140 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC01_minus
+            bigDataUrl CAGE_L_00134_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00134 view=term
             parent termviewtrack on
     
             track CAGE_L_00134_BC01_plus
@@ -323,7 +661,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC03_minus
+            bigDataUrl CAGE_L_00135_BC03_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00135 view=term
             parent termviewtrack on
     
             track CAGE_L_00135_BC03_plus
@@ -336,7 +688,21 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC04_minus
+            bigDataUrl CAGE_L_00136_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00136 view=term
             parent termviewtrack on
     
             track CAGE_L_00136_BC04_plus
@@ -349,358 +715,707 @@ compositeTrack on
             altColor 74,163,14
             autoScale on
             maxHeightPixels 128:32:8
-            subGroups view=term
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00136 view=term
             parent termviewtrack on
-
-track super
-shortLabel Super track
-longLabel Super track
-superTrack on
-
-track CompositeAggregate
-shortLabel CompositeAggregate
-longLabel CompositeAggregate
-type bigWig
-visibility full
-maxHeightPixels 128:32:8
-aggregate transparentOverlay
-parent super on
-container multiWig
-
-    track CAGE_L_00141_BC04_minus
-    bigDataUrl CAGE_L_00141_BC04_minus.bigWig
-    shortLabel Border Collie
-    longLabel amygdala, caudate nucleus, Border Collie
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00117_BC02_minus
-    bigDataUrl CAGE_L_00117_BC02_minus.bigWig
-    shortLabel Collie
-    longLabel parathyroid gland, Collie
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00118_BC01_minus
-    bigDataUrl CAGE_L_00118_BC01_minus.bigWig
-    shortLabel Swedish Elkhound
-    longLabel cardiac muscle tissue, Swedish Elkhound
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00141_BC01_minus
-    bigDataUrl CAGE_L_00141_BC01_minus.bigWig
-    shortLabel Swedish Elkhound
-    longLabel piriform lobe, Swedish Elkhound
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00142_BC01_minus
-    bigDataUrl CAGE_L_00142_BC01_minus.bigWig
-    shortLabel Swedish Elkhound
-    longLabel cerebellum hemisphere, cerebellum vermis, Swedish Elkhound
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00118_BC02_minus
-    bigDataUrl CAGE_L_00118_BC02_minus.bigWig
-    shortLabel German Pinscher
-    longLabel uterus, German Pinscher
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00119_BC04_minus
-    bigDataUrl CAGE_L_00119_BC04_minus.bigWig
-    shortLabel German Pinscher
-    longLabel cardiac muscle tissue, German Pinscher
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00120_BC04_minus
-    bigDataUrl CAGE_L_00120_BC04_minus.bigWig
-    shortLabel German Pinscher
-    longLabel parathyroid gland, German Pinscher
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00117_BC01_minus
-    bigDataUrl CAGE_L_00117_BC01_minus.bigWig
-    shortLabel Rottweiler
-    longLabel skin, Rottweiler
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00120_BC02_minus
-    bigDataUrl CAGE_L_00120_BC02_minus.bigWig
-    shortLabel Rottweiler
-    longLabel corpus callosum, Rottweiler
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00143_BC01_minus
-    bigDataUrl CAGE_L_00143_BC01_minus.bigWig
-    shortLabel Rottweiler
-    longLabel piriform lobe, Rottweiler
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00146_BC04_minus
-    bigDataUrl CAGE_L_00146_BC04_minus.bigWig
-    shortLabel Rottweiler
-    longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Rottweiler
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00142_BC04_minus
-    bigDataUrl CAGE_L_00142_BC04_minus.bigWig
-    shortLabel Finnish Lapphund
-    longLabel caudate nucleus, amygdala, Finnish Lapphund
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00144_BC04_minus
-    bigDataUrl CAGE_L_00144_BC04_minus.bigWig
-    shortLabel Finnish Lapphund
-    longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Finnish Lapphund
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00133_BC04_minus
-    bigDataUrl CAGE_L_00133_BC04_minus.bigWig
-    shortLabel Wolf
-    longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00135_BC01_minus
-    bigDataUrl CAGE_L_00135_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel corpus callosum, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00136_BC01_minus
-    bigDataUrl CAGE_L_00136_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel cerebellum hemisphere, cerebellum vermis, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00139_BC01_minus
-    bigDataUrl CAGE_L_00139_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel skin, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00133_BC01_minus
-    bigDataUrl CAGE_L_00133_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel cerebellum hemisphere, cerebellum vermis, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00134_BC04_minus
-    bigDataUrl CAGE_L_00134_BC04_minus.bigWig
-    shortLabel Wolf
-    longLabel corpus callosum, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00138_BC01_minus
-    bigDataUrl CAGE_L_00138_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel piriform lobe, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00139_BC03_minus
-    bigDataUrl CAGE_L_00139_BC03_minus.bigWig
-    shortLabel Wolf
-    longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00140_BC04_minus
-    bigDataUrl CAGE_L_00140_BC04_minus.bigWig
-    shortLabel Wolf
-    longLabel caudate nucleus, amygdala, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00134_BC01_minus
-    bigDataUrl CAGE_L_00134_BC01_minus.bigWig
-    shortLabel Wolf
-    longLabel piriform lobe, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00135_BC03_minus
-    bigDataUrl CAGE_L_00135_BC03_minus.bigWig
-    shortLabel Wolf
-    longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
-
-    track CAGE_L_00136_BC04_minus
-    bigDataUrl CAGE_L_00136_BC04_minus.bigWig
-    shortLabel Wolf
-    longLabel caudate nucleus, amygdala, Wolf
-    type bigWig
-    visibility full
-    color 0,209,0
-    altColor 74,163,14
-    autoScale on
-    maxHeightPixels 128:32:8
-    negateValues on
-    parent CompositeAggregate on
+    
+            track CAGE_L_00141_BC04_minus
+            bigDataUrl CAGE_L_00141_BC04_minus.bigWig
+            shortLabel Border Collie
+            longLabel amygdala, caudate nucleus, Border Collie
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=amygdala, caudate nucleus strand=minus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00141_BC04_plus
+            bigDataUrl CAGE_L_00141_BC04_plus.bigWig
+            shortLabel Border Collie
+            longLabel amygdala, caudate nucleus, Border Collie
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=amygdala, caudate nucleus strand=plus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC02_minus
+            bigDataUrl CAGE_L_00117_BC02_minus.bigWig
+            shortLabel Collie
+            longLabel parathyroid gland, Collie
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=parathyroid gland strand=minus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC02_plus
+            bigDataUrl CAGE_L_00117_BC02_plus.bigWig
+            shortLabel Collie
+            longLabel parathyroid gland, Collie
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=parathyroid gland strand=plus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC01_minus
+            bigDataUrl CAGE_L_00118_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cardiac muscle tissue, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cardiac muscle tissue strand=minus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC01_plus
+            bigDataUrl CAGE_L_00118_BC01_plus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cardiac muscle tissue, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=cardiac muscle tissue strand=plus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00141_BC01_minus
+            bigDataUrl CAGE_L_00141_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel piriform lobe, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00141_BC01_plus
+            bigDataUrl CAGE_L_00141_BC01_plus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel piriform lobe, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00141 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC01_minus
+            bigDataUrl CAGE_L_00142_BC01_minus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cerebellum hemisphere, cerebellum vermis, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC01_plus
+            bigDataUrl CAGE_L_00142_BC01_plus.bigWig
+            shortLabel Swedish Elkhound
+            longLabel cerebellum hemisphere, cerebellum vermis, Swedish Elkhound
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC02_minus
+            bigDataUrl CAGE_L_00118_BC02_minus.bigWig
+            shortLabel German Pinscher
+            longLabel uterus, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=uterus strand=minus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00118_BC02_plus
+            bigDataUrl CAGE_L_00118_BC02_plus.bigWig
+            shortLabel German Pinscher
+            longLabel uterus, German Pinscher
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=uterus strand=plus sample=CAGE_L_00118 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00119_BC04_minus
+            bigDataUrl CAGE_L_00119_BC04_minus.bigWig
+            shortLabel German Pinscher
+            longLabel cardiac muscle tissue, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cardiac muscle tissue strand=minus sample=CAGE_L_00119 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00119_BC04_plus
+            bigDataUrl CAGE_L_00119_BC04_plus.bigWig
+            shortLabel German Pinscher
+            longLabel cardiac muscle tissue, German Pinscher
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=cardiac muscle tissue strand=plus sample=CAGE_L_00119 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC04_minus
+            bigDataUrl CAGE_L_00120_BC04_minus.bigWig
+            shortLabel German Pinscher
+            longLabel parathyroid gland, German Pinscher
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=parathyroid gland strand=minus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC04_plus
+            bigDataUrl CAGE_L_00120_BC04_plus.bigWig
+            shortLabel German Pinscher
+            longLabel parathyroid gland, German Pinscher
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=parathyroid gland strand=plus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC01_minus
+            bigDataUrl CAGE_L_00117_BC01_minus.bigWig
+            shortLabel Rottweiler
+            longLabel skin, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=skin strand=minus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00117_BC01_plus
+            bigDataUrl CAGE_L_00117_BC01_plus.bigWig
+            shortLabel Rottweiler
+            longLabel skin, Rottweiler
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=skin strand=plus sample=CAGE_L_00117 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC02_minus
+            bigDataUrl CAGE_L_00120_BC02_minus.bigWig
+            shortLabel Rottweiler
+            longLabel corpus callosum, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00120_BC02_plus
+            bigDataUrl CAGE_L_00120_BC02_plus.bigWig
+            shortLabel Rottweiler
+            longLabel corpus callosum, Rottweiler
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00120 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00143_BC01_minus
+            bigDataUrl CAGE_L_00143_BC01_minus.bigWig
+            shortLabel Rottweiler
+            longLabel piriform lobe, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00143 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00143_BC01_plus
+            bigDataUrl CAGE_L_00143_BC01_plus.bigWig
+            shortLabel Rottweiler
+            longLabel piriform lobe, Rottweiler
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00143 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00146_BC04_minus
+            bigDataUrl CAGE_L_00146_BC04_minus.bigWig
+            shortLabel Rottweiler
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Rottweiler
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00146 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00146_BC04_plus
+            bigDataUrl CAGE_L_00146_BC04_plus.bigWig
+            shortLabel Rottweiler
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Rottweiler
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00146 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC04_minus
+            bigDataUrl CAGE_L_00142_BC04_minus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel caudate nucleus, amygdala, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00142_BC04_plus
+            bigDataUrl CAGE_L_00142_BC04_plus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel caudate nucleus, amygdala, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00142 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00144_BC04_minus
+            bigDataUrl CAGE_L_00144_BC04_minus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00144 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00144_BC04_plus
+            bigDataUrl CAGE_L_00144_BC04_plus.bigWig
+            shortLabel Finnish Lapphund
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Finnish Lapphund
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00144 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC04_minus
+            bigDataUrl CAGE_L_00133_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC04_plus
+            bigDataUrl CAGE_L_00133_BC04_plus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC01_minus
+            bigDataUrl CAGE_L_00135_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC01_plus
+            bigDataUrl CAGE_L_00135_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC01_minus
+            bigDataUrl CAGE_L_00136_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00136 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC01_plus
+            bigDataUrl CAGE_L_00136_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00136 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC01_minus
+            bigDataUrl CAGE_L_00139_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel skin, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=skin strand=minus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC01_plus
+            bigDataUrl CAGE_L_00139_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel skin, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=skin strand=plus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC01_minus
+            bigDataUrl CAGE_L_00133_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=minus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00133_BC01_plus
+            bigDataUrl CAGE_L_00133_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel cerebellum hemisphere, cerebellum vermis, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=cerebellum hemisphere, cerebellum vermis strand=plus sample=CAGE_L_00133 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC04_minus
+            bigDataUrl CAGE_L_00134_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=corpus callosum strand=minus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC04_plus
+            bigDataUrl CAGE_L_00134_BC04_plus.bigWig
+            shortLabel Wolf
+            longLabel corpus callosum, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=corpus callosum strand=plus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00138_BC01_minus
+            bigDataUrl CAGE_L_00138_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00138 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00138_BC01_plus
+            bigDataUrl CAGE_L_00138_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00138 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC03_plus
+            bigDataUrl CAGE_L_00139_BC03_plus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00139_BC03_minus
+            bigDataUrl CAGE_L_00139_BC03_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00139 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00140_BC04_minus
+            bigDataUrl CAGE_L_00140_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00140 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00140_BC04_plus
+            bigDataUrl CAGE_L_00140_BC04_plus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00140 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC01_minus
+            bigDataUrl CAGE_L_00134_BC01_minus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=piriform lobe strand=minus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00134_BC01_plus
+            bigDataUrl CAGE_L_00134_BC01_plus.bigWig
+            shortLabel Wolf
+            longLabel piriform lobe, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=piriform lobe strand=plus sample=CAGE_L_00134 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC03_minus
+            bigDataUrl CAGE_L_00135_BC03_minus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=minus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00135_BC03_plus
+            bigDataUrl CAGE_L_00135_BC03_plus.bigWig
+            shortLabel Wolf
+            longLabel frontal cortex, parietal cortex, temporal cortex, occipital cortex, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=frontal cortex, parietal cortex, temporal cortex, occipital cortex strand=plus sample=CAGE_L_00135 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC04_minus
+            bigDataUrl CAGE_L_00136_BC04_minus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 0,209,0
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            negateValues on
+            subGroups term=caudate nucleus, amygdala strand=minus sample=CAGE_L_00136 view=term
+            parent termviewtrack on
+    
+            track CAGE_L_00136_BC04_plus
+            bigDataUrl CAGE_L_00136_BC04_plus.bigWig
+            shortLabel Wolf
+            longLabel caudate nucleus, amygdala, Wolf
+            type bigWig
+            visibility full
+            color 136,14,212
+            altColor 74,163,14
+            autoScale on
+            maxHeightPixels 128:32:8
+            subGroups term=caudate nucleus, amygdala strand=plus sample=CAGE_L_00136 view=term
+            parent termviewtrack on
