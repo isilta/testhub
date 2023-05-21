@@ -4,8 +4,6 @@ longLabel CAGE-seq tracks
 type bigWig
 dimensions dimX=term dimA=strand
 subGroup1 view Views term=term
-subGroup2 terms Terms nan=nan cardiac muscle tissue=cardiac muscle tissue neurohypophysis=neurohypophysis testis=testis skeletal muscle=skeletal muscle artery, vena cava=artery, vena cava adenohypophysis=adenohypophysis liver=liver hippocampal formation=hippocampal formation spinal cord=spinal cord stomach=stomach trachea, bronchus=trachea, bronchus colon=colon parathyroid gland=parathyroid gland spleen=spleen pancreas=pancreas retina, optic II nerve=retina, optic II nerve olfactory bulb, vomeronasal organ, nasal cavity olfactory mucosa=olfactory bulb, vomeronasal organ, nasal cavity olfactory mucosa gall bladder=gall bladder heart endocardium, heart valve=heart endocardium, heart valve adrenal gland=adrenal gland urinary bladder=urinary bladder midbrain, pons, brainstem=midbrain, pons, brainstem brain=brain piriform lobe=piriform lobe thalamus=thalamus lung=lung bone marrow=bone marrow thyroid gland=thyroid gland prostate gland=prostate gland corpus callosum=corpus callosum skin=skin kidney=kidney uterus=uterus caudate nucleus, amygdala=caudate nucleus, amygdala amygdala, caudate nucleus=amygdala, caudate nucleus frontal cortex, parietal cortex, temporal cortex, occipital cortex=frontal cortex, parietal cortex, temporal cortex, occipital cortex midbrain, brainstem, pons=midbrain, brainstem, pons olfactory bulb=olfactory bulb ovary=ovary spinal ganglion=spinal ganglion cerebellum hemisphere, cerebellum vermis=cerebellum hemisphere, cerebellum vermis
-subGroup3 strand Strand plus=+ minus=-
 compositeTrack on
 
     track termviewtrack
